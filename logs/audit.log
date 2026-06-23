@@ -1,0 +1,36 @@
+[AUDIT] 2026-06-23 11:43:30,848 - SessionID='test-session-123' | ComplianceCheckStatus='PASSED' | Metrics={'pH': 7.4, 'BOD': 8.0, 'COD': 40.0, 'Heavy Metals': 0.5, 'SO2': 25.0, 'NOx': 30.0, 'PM2.5': 12.0, 'CO2': 450.0}
+[AUDIT] 2026-06-23 11:43:30,848 - Agent='EcoGuardMaster' | Action='DELEGATED' | Details='Routing to WaterMonitor'
+[AUDIT] 2026-06-23 11:43:30,848 - AlertState='DISPATCHED' | Severity='CRITICAL' | ViolatingParameters=['pH', 'BOD'] | Details='CPCB thresholds exceeded at effluent discharge line.'
+[AUDIT] 2026-06-23 11:43:30,848 - SecurityViolation='PROMPT_INJECTION' | Details='Blocked user query containing 'ignore previous instructions'.'
+[AUDIT] 2026-06-23 11:49:14,380 - Agent='MCPServer' | Action='get_water_quality' | Details='Reading sensor file'
+[AUDIT] 2026-06-23 11:49:14,380 - Agent='MCPServer' | Action='get_air_emissions' | Details='Reading sensor file'
+[AUDIT] 2026-06-23 11:49:14,386 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 11:49:14,386 - SessionID='mcp-server-session' | ComplianceCheckStatus='COMPLIANT' | Metrics={'pH': 7.2, 'BOD': 15.0, 'COD': 120.0, 'Heavy Metals': 0.05, 'SO2': 35.0, 'NOx': 40.0, 'PM2.5': 28.0, 'CO2': 420.0}
+[AUDIT] 2026-06-23 11:49:14,386 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 11:49:14,387 - SessionID='mcp-server-session' | ComplianceCheckStatus='NON-COMPLIANT' | Metrics={'pH': 11.0, 'BOD': 45.0, 'COD': 120.0, 'Heavy Metals': 0.05, 'SO2': 150.0, 'NOx': 40.0, 'PM2.5': 28.0, 'CO2': 420.0}
+[AUDIT] 2026-06-23 11:49:14,387 - AlertState='DISPATCHED' | Severity='WARNING' | ViolatingParameters=['pH', 'BOD', 'SO2'] | Details='Violating parameters detected: ['pH out of range (11.0)', 'BOD exceeds standard (45.0 > 30.0 mg/L)', 'SO2 exceeds standard (150.0 > 80.0)']'
+[AUDIT] 2026-06-23 12:23:43,887 - Agent='MCPServer' | Action='get_air_emissions' | Details='Reading sensor file'
+[AUDIT] 2026-06-23 12:23:43,888 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:23:43,888 - SessionID='mcp-server-session' | ComplianceCheckStatus='COMPLIANT' | Metrics={'pH': 7.2, 'BOD': 15.0, 'COD': 120.0, 'Heavy Metals': 0.05, 'SO2': 35.0, 'NOx': 45.0, 'PM2.5': 28.0, 'CO2': 420.0}
+[AUDIT] 2026-06-23 12:23:43,889 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:23:43,889 - SessionID='mcp-server-session' | ComplianceCheckStatus='NON-COMPLIANT' | Metrics={'pH': 7.2, 'BOD': 15.0, 'COD': 120.0, 'Heavy Metals': 0.05, 'SO2': 150.0, 'NOx': 95.0, 'PM2.5': 90.0, 'CO2': 1200.0}
+[AUDIT] 2026-06-23 12:23:43,889 - AlertState='DISPATCHED' | Severity='WARNING' | ViolatingParameters=['SO2', 'NOx', 'PM2.5', 'CO2'] | Details='Violating parameters detected: ['SO2 exceeds standard (150.0 > 80.0)', 'NOx exceeds standard (95.0 > 80.0)', 'PM2.5 exceeds standard (90.0 > 60.0)', 'CO2 exceeds standard (1200.0 > 1000.0)']'
+[AUDIT] 2026-06-23 12:23:43,891 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:23:43,892 - SessionID='mcp-server-session' | ComplianceCheckStatus='COMPLIANT' | Metrics={'pH': 7.2, 'BOD': 15.0, 'COD': 120.0, 'Heavy Metals': 0.05, 'SO2': 35.0, 'NOx': 40.0, 'PM2.5': 28.0, 'CO2': 420.0}
+[AUDIT] 2026-06-23 12:23:43,892 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:23:43,893 - SessionID='mcp-server-session' | ComplianceCheckStatus='COMPLIANT' | Metrics={'pH': 7.0, 'BOD': 5.0, 'COD': 50.0, 'Heavy Metals': 0.01, 'SO2': 20.0, 'NOx': 20.0, 'PM2.5': 10.0, 'CO2': 380.0}
+[AUDIT] 2026-06-23 12:23:43,894 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:23:43,894 - SessionID='mcp-server-session' | ComplianceCheckStatus='NON-COMPLIANT' | Metrics={'pH': 4.5, 'BOD': 45.0, 'COD': 120.0, 'Heavy Metals': 0.05, 'SO2': 35.0, 'NOx': 40.0, 'PM2.5': 90.0, 'CO2': 420.0}
+[AUDIT] 2026-06-23 12:23:43,894 - AlertState='DISPATCHED' | Severity='WARNING' | ViolatingParameters=['pH', 'BOD', 'PM2.5'] | Details='Violating parameters detected: ['pH out of range (4.5)', 'BOD exceeds standard (45.0 > 30.0 mg/L)', 'PM2.5 exceeds standard (90.0 > 60.0)']'
+[AUDIT] 2026-06-23 12:23:43,901 - Agent='MCPServer' | Action='get_water_quality' | Details='Reading sensor file'
+[AUDIT] 2026-06-23 12:23:43,902 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:23:43,902 - SessionID='mcp-server-session' | ComplianceCheckStatus='COMPLIANT' | Metrics={'pH': 7.2, 'BOD': 15.0, 'COD': 120.0, 'Heavy Metals': 0.05, 'SO2': 35.0, 'NOx': 40.0, 'PM2.5': 28.0, 'CO2': 420.0}
+[AUDIT] 2026-06-23 12:23:43,903 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:23:43,904 - SessionID='mcp-server-session' | ComplianceCheckStatus='NON-COMPLIANT' | Metrics={'pH': 11.0, 'BOD': 45.0, 'COD': 300.0, 'Heavy Metals': 0.5, 'SO2': 35.0, 'NOx': 40.0, 'PM2.5': 28.0, 'CO2': 420.0}
+[AUDIT] 2026-06-23 12:23:43,904 - AlertState='DISPATCHED' | Severity='WARNING' | ViolatingParameters=['pH', 'BOD', 'COD', 'Heavy'] | Details='Violating parameters detected: ['pH out of range (11.0)', 'BOD exceeds standard (45.0 > 30.0 mg/L)', 'COD exceeds standard (300.0 > 250.0 mg/L)', 'Heavy Metals exceeds standard (0.5 > 0.1 mg/L)']'
+[AUDIT] 2026-06-23 12:44:20,141 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:44:20,147 - SessionID='mcp-server-session' | ComplianceCheckStatus='NON-COMPLIANT' | Metrics={'pH': 11.0, 'BOD': 45.0, 'COD': 5.0, 'Heavy Metals': 5.0, 'SO2': 150.0, 'NOx': 40.0, 'PM2.5': 28.0, 'CO2': 420.0}
+[AUDIT] 2026-06-23 12:44:20,148 - AlertState='DISPATCHED' | Severity='WARNING' | ViolatingParameters=['pH', 'BOD', 'Heavy', 'SO2'] | Details='Violating parameters detected: ['pH out of range (11.0)', 'BOD exceeds standard (45.0 > 30.0 mg/L)', 'Heavy Metals exceeds standard (5.0 > 0.1 mg/L)', 'SO2 exceeds standard (150.0 > 80.0)']'
+[AUDIT] 2026-06-23 12:44:20,148 - AlertState='DISPATCHED' | Severity='CRITICAL' | ViolatingParameters=['pH', 'BOD', 'Heavy', 'SO2'] | Details='Alert dispatched: ['pH out of range (11.0)', 'BOD exceeds standard (45.0 > 30.0 mg/L)', 'Heavy Metals exceeds standard (5.0 > 0.1 mg/L)', 'SO2 exceeds standard (150.0 > 80.0)']'
+[AUDIT] 2026-06-23 12:56:25,382 - Agent='MCPServer' | Action='check_cpcb_compliance' | Details='Starting compliance checks'
+[AUDIT] 2026-06-23 12:56:25,390 - SessionID='mcp-server-session' | ComplianceCheckStatus='COMPLIANT' | Metrics={'pH': 7.2, 'BOD': 15.0, 'COD': 120.0, 'Heavy Metals': 0.05, 'SO2': 35.0, 'NOx': 40.0, 'PM2.5': 28.0, 'CO2': 420.0}
