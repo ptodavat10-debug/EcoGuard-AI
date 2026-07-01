@@ -1,167 +1,185 @@
 🌍 EcoGuard AI – Industrial Pollution Compliance Monitoring System
-🚀 Project Overview
 
-EcoGuard AI is a Multi-Agent AI system designed to monitor industrial water and air pollution in real time and evaluate compliance with CPCB (Central Pollution Control Board) standards.
+🚀 A Multi-Agent AI System for Monitoring Industrial Water and Air Pollution Compliance using CPCB Standards
 
-The system automatically analyzes environmental sensor readings, detects violations, generates alerts, and provides compliance reports.
+📌 Project Overview
+
+EcoGuard AI is a Multi-Agent Artificial Intelligence system designed to monitor industrial wastewater quality and air emissions in real time. The system automatically evaluates environmental parameters against CPCB (Central Pollution Control Board) standards, detects violations, generates alerts, and produces compliance audit reports.
+
+This project demonstrates how AI agents can collaborate to improve environmental monitoring, industrial safety, and regulatory compliance.
 
 🎯 Developed for the Google x Kaggle AI Agents Capstone Project (Agents for Good Track).
 
 ❗ Problem Statement
 
-Many industries exceed CPCB pollution limits, causing:
+Industrial facilities often struggle to continuously monitor environmental pollution levels and ensure compliance with CPCB regulations.
 
-🌫️ Air Pollution
+Common challenges include:
 
-💧 Water Pollution
+🌫️ Air pollution violations
 
-⚠️ Environmental Risks
+💧 Wastewater contamination
 
-🏥 Public Health Issues
+⚠️ Delayed detection of environmental risks
 
-Manual monitoring is often slow and inefficient.
+📋 Manual compliance reporting
 
-EcoGuard AI helps industries monitor pollution automatically and take corrective actions.
+🚨 Slow incident response
 
-🎯 Objectives
+EcoGuard AI addresses these challenges through automated monitoring, intelligent analysis, alert generation, and compliance reporting.
+
+🎯 Project Objectives
 
 ✅ Monitor industrial wastewater quality
 
 ✅ Monitor industrial air emissions
 
-✅ Detect CPCB standard violations
+✅ Detect CPCB compliance violations
 
-✅ Generate automated alerts
+✅ Generate automated SMS and Email alerts
 
-✅ Demonstrate Multi-Agent AI architecture
+✅ Demonstrate Multi-Agent AI collaboration
 
-✅ Provide explainable AI reasoning
+✅ Provide Explainable AI reasoning
+
+✅ Generate compliance audit reports
 
 🤖 Multi-Agent Architecture
 
-EcoGuard AI consists of five specialized AI agents.
+EcoGuard AI uses a collaborative Multi-Agent architecture where specialized agents work together to perform environmental compliance monitoring.
 
-🧠 1. EcoGuardMaster Agent
+🧠 EcoGuardMaster Agent
 Responsibilities
 Receives compliance requests
 Coordinates all agents
-Collects results
-Generates final decisions
-💧 2. WaterMonitor Agent
+Collects analysis results
+Makes final compliance decisions
+Generates audit workflow
+💧 WaterMonitor Agent
 Responsibilities
 Monitors wastewater parameters
-Evaluates CPCB water standards
+Evaluates CPCB water quality limits
 Detects water pollution violations
-Parameters
+Parameters Monitored
 pH
-BOD
-COD
+BOD (Biochemical Oxygen Demand)
+COD (Chemical Oxygen Demand)
 Heavy Metals
-🌫️ 3. AirMonitor Agent
+🌫️ AirMonitor Agent
 Responsibilities
-Monitors air emission parameters
-Evaluates CPCB air quality standards
-Detects emission violations
-Parameters
+Monitors air emissions
+Evaluates CPCB air quality limits
+Detects air pollution violations
+Parameters Monitored
 SO₂
 NOx
 PM2.5
 CO₂
-🚨 4. AlertDispatch Agent
+🚨 AlertDispatch Agent
 Responsibilities
 
 📱 SMS Alert Generation
 
-📧 Email Notifications
+📧 Email Notification Generation
 
-🚨 Incident Response
+🚨 Incident Response Activation
 
-📢 Operator Notification
+📢 Compliance Warning Dispatch
 
-📊 5. ReportGen Agent
+📄 ReportGen Agent
 Responsibilities
 
-📄 Compliance Reports
+📋 Compliance Audit Report Generation
 
-📋 Audit Documentation
+📊 Environmental Assessment Summary
 
-📈 Environmental Analysis Summary
+📑 Regulatory Documentation
 
 🧠 AI Concepts Implemented
 🤖 1. Multi-Agent Systems
 
-Multiple AI agents collaborate to solve environmental monitoring tasks.
+The project uses multiple AI agents that collaborate to solve environmental monitoring tasks.
 
-Example Flow
-
+Agent Workflow
+User
+  ↓
 EcoGuardMaster
-
-⬇️
-
+  ↓
 WaterMonitor
-
-⬇️
-
+  ↓
 AirMonitor
-
-⬇️
-
+  ↓
 AlertDispatch
-
-⬇️
-
+  ↓
 ReportGen
-
+  ↓
+User
 🔄 2. Agent Communication
 
-Agents exchange information and delegate tasks.
-
-✅ WaterMonitor → Water Analysis
-
-✅ AirMonitor → Air Analysis
-
-✅ AlertDispatch → Notifications
-
-✅ ReportGen → Final Report
-
-⚖️ 3. Rule-Based AI Decision Making
-
-The system compares sensor readings with CPCB standards.
+Agents communicate through delegated tasks and structured message passing.
 
 Example
 
-❌ BOD > 30 mg/L
+EcoGuardMaster → WaterMonitor
 
-❌ COD > 250 mg/L
+WaterMonitor → EcoGuardMaster
 
-❌ SO₂ > 80 µg/m³
+EcoGuardMaster → AirMonitor
 
-➡️ Violation Detected
+AirMonitor → EcoGuardMaster
 
+EcoGuardMaster → AlertDispatch
+
+AlertDispatch → ReportGen
+
+⚖️ 3. Rule-Based AI Decision Making
+
+The system compares sensor values against CPCB limits.
+
+Example
+BOD > 30 mg/L       → Violation
+COD > 250 mg/L      → Violation
+SO₂ > 80 µg/m³      → Violation
+NOx > 80 µg/m³      → Violation
 🔍 4. Explainable AI
 
 The Live Agent Reasoning panel explains:
 
-🧠 Which agent executed
+✅ Which agent executed
 
-📋 What decisions were taken
+✅ What analysis was performed
 
-⚠️ Why violations occurred
+✅ Why violations occurred
 
-🚨 How alerts were generated
+✅ Why alerts were triggered
+
+✅ How reports were generated
 
 📢 5. Automated Alert Generation
 
 When violations are detected:
 
-📱 SMS Alerts
+📱 SMS alerts are generated
 
-📧 Email Alerts
+📧 Email alerts are generated
 
-🚨 Incident Response Queue
+🚨 Incident response actions are triggered
 
-📄 Compliance Reports
+📄 Compliance records are logged
 
+📏 CPCB Parameters Used
+💧 Wastewater Quality Parameters
+Parameter	CPCB Limit
+pH	6.5 – 8.5
+BOD	≤ 30 mg/L
+COD	≤ 250 mg/L
+Heavy Metals	≤ 0.1 mg/L
+🌫️ Air Emission Parameters
+Parameter	CPCB Limit
+SO₂	≤ 80 µg/m³
+NOx	≤ 80 µg/m³
+PM2.5	≤ 60 µg/m³
+CO₂	≤ 1000 ppm
 🛠️ Technology Stack
 Programming Language
 
@@ -181,114 +199,157 @@ Libraries
 
 Development Tools
 
-💻 VS Code
+💻 Visual Studio Code
 
 🌐 GitHub
 
 🔄 System Workflow
+Step 1
 
-👤 User enters sensor values
-
-⬇️
-
-🧠 EcoGuardMaster receives request
+👤 User enters sensor readings
 
 ⬇️
 
-💧 WaterMonitor evaluates wastewater
+Step 2
+
+🧠 EcoGuardMaster receives compliance request
 
 ⬇️
 
-🌫️ AirMonitor evaluates emissions
+Step 3
+
+💧 WaterMonitor analyzes wastewater quality
 
 ⬇️
 
-⚠️ Violations detected
+Step 4
+
+🌫️ AirMonitor analyzes emissions quality
 
 ⬇️
 
-🚨 AlertDispatch generates alerts
+Step 5
+
+⚠️ Violations are identified
 
 ⬇️
 
-📊 ReportGen creates report
+Step 6
+
+🚨 AlertDispatch generates notifications
 
 ⬇️
 
-✅ Results displayed
+Step 7
 
-📏 CPCB Parameters Used
-💧 Wastewater Parameters
-Parameter	CPCB Limit
-pH	6.5 – 8.5
-BOD	≤ 30 mg/L
-COD	≤ 250 mg/L
-Heavy Metals	≤ 0.1 mg/L
-🌫️ Air Emission Parameters
-Parameter	CPCB Limit
-SO₂	≤ 80 µg/m³
-NOx	≤ 80 µg/m³
-PM2.5	≤ 60 µg/m³
-CO₂	≤ 1000 ppm
+📄 ReportGen creates compliance report
+
+⬇️
+
+Step 8
+
+✅ Results displayed to the user
+
 📸 Screenshots
-<img width="1297" height="647" alt="Image" src="https://github.com/user-attachments/assets/1104ed59-c8ab-45a0-8771-a001270f4d4a" />
+🌍 Figure 1 – EcoGuard AI Dashboard
 
-EcoGuard AI Dashboard
+Main dashboard displaying wastewater and air emission monitoring parameters.
 
-<img width="1308" height="650" alt="Image" src="https://github.com/user-attachments/assets/dbbe4024-ab4f-4705-a1f3-f2fbb761fec2" />
+🚨 Figure 2 – CPCB Compliance Violation Detection
 
-CPCB Compliance Violation Detection
+Automatic detection of pollution parameters exceeding CPCB limits.
 
-<img width="1284" height="660" alt="Image" src="https://github.com/user-attachments/assets/077b824f-09a1-4e35-b078-138a65d088e0" />
+📢 Figure 3 – Automated Alert Dispatch Queue
 
-Automated Alert Dispatch Queue
+SMS and Email alerts generated after detecting violations.
 
-<img width="1286" height="645" alt="Image" src="https://github.com/user-attachments/assets/ed520adb-79c0-4e35-b5e8-453665566a4a" />
+🔄 Figure 4 – Agent Communication Trace
 
-Agent Communication Trace
+Communication between EcoGuardMaster, WaterMonitor, AirMonitor, AlertDispatch, and ReportGen.
 
-<img width="1286" height="645" alt="Image" src="https://github.com/user-attachments/assets/ed520adb-79c0-4e35-b5e8-453665566a4a" />
+🧠 Figure 5 – Live Agent Reasoning
 
-Live Agent Reasoning Panel
+Explainable AI decision-making and compliance analysis.
 
-<img width="1221" height="658" alt="Image" src="https://github.com/user-attachments/assets/373e756f-52f8-45e0-816f-a37811140076" />
+📄 Figure 6 – CPCB Industrial Compliance Audit Report
 
+Final compliance report generated by ReportGen Agent.
+
+📋 Figure 7 – Air Quality Assessment Report
+
+Detailed air quality compliance assessment.
+
+✅ Results
 
 The system successfully:
 
 ✅ Detected CPCB violations
 
-✅ Generated compliance status
+✅ Evaluated wastewater compliance
 
-✅ Triggered automated alerts
+✅ Evaluated air emission compliance
 
-✅ Demonstrated agent communication
+✅ Generated automated alerts
 
-✅ Displayed explainable AI reasoning
+✅ Demonstrated multi-agent collaboration
 
-✅ Generated compliance reports
+✅ Provided explainable AI reasoning
+
+✅ Generated compliance audit reports
 
 🔮 Future Enhancements
 
-📡 Real IoT Sensor Integration
+📡 Real-time IoT sensor integration
 
-☁️ CPCB API Integration
+☁️ CPCB API integration
 
-📈 Pollution Forecasting
+📱 Mobile application support
 
-📱 Mobile Application
+🗺️ GIS-based pollution mapping
 
-🗺️ GIS-Based Pollution Mapping
+📈 Pollution forecasting using Machine Learning
 
-🤖 Machine Learning Anomaly Detection
+🤖 Predictive environmental risk assessment
+
+🎥 Demo Video
+
+A complete screen-recorded demonstration video has been created showing:
+
+✅ Dashboard Navigation
+
+✅ Pollution Parameter Monitoring
+
+✅ CPCB Compliance Evaluation
+
+✅ Violation Detection
+
+✅ Alert Generation
+
+✅ Agent Communication
+
+✅ Live AI Reasoning
+
+✅ Audit Report Generation
+
+🌱 Environmental Impact
+
+EcoGuard AI helps industries:
+
+🌍 Reduce environmental pollution
+
+🏭 Improve regulatory compliance
+
+⚠️ Detect risks earlier
+
+📊 Improve environmental decision-making
+
+📋 Maintain audit-ready records
 
 🎉 Conclusion
 
-EcoGuard AI demonstrates how Multi-Agent AI systems can be used for industrial pollution monitoring and environmental compliance management.
+EcoGuard AI demonstrates how Multi-Agent AI systems can be applied to environmental monitoring and industrial compliance management.
 
-The system automatically evaluates wastewater and air emissions against CPCB standards, generates alerts, and provides explainable compliance reports.
-
-🌍 Helping industries become safer and more environmentally responsible.
+By combining environmental monitoring, automated decision-making, alert generation, explainable AI, and compliance reporting, the system provides a scalable solution for helping industries maintain CPCB compliance and reduce environmental risks.
 
 👩‍💻 Author
 
@@ -300,5 +361,24 @@ Priyanka Hiraman Todavat
 
 🌍 Project: EcoGuard AI – Industrial Pollution Compliance Monitoring System
 
-🚀 AI for Environmental Sustainability 🌱
+🚀 AI for Environmental Sustainability & Industrial Safety 🌱
 
+⭐ Key Features
+
+✅ Multi-Agent AI Architecture
+
+✅ CPCB Compliance Monitoring
+
+✅ Water Quality Analysis
+
+✅ Air Emission Analysis
+
+✅ Automated Alert Generation
+
+✅ Explainable AI Reasoning
+
+✅ Compliance Audit Reporting
+
+✅ Interactive Gradio Dashboard
+
+⭐ If you like this project, please give it a star on GitHub! ⭐
