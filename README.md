@@ -247,7 +247,7 @@ Automated Alert Dispatch Queue
 
 Agent Communication Trace
 
-📸 Figure 5
+<img width="1286" height="645" alt="Image" src="https://github.com/user-attachments/assets/ed520adb-79c0-4e35-b5e8-453665566a4a" />
 
 Live Agent Reasoning Panel
 
