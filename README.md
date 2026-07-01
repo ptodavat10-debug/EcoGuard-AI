@@ -235,7 +235,7 @@ CO₂	≤ 1000 ppm
 
 EcoGuard AI Dashboard
 
-📸 Figure 2
+<img width="1308" height="650" alt="Image" src="https://github.com/user-attachments/assets/dbbe4024-ab4f-4705-a1f3-f2fbb761fec2" />
 
 CPCB Compliance Violation Detection
 
