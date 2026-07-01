@@ -251,7 +251,8 @@ Agent Communication Trace
 
 Live Agent Reasoning Panel
 
-✅ Results
+<img width="1221" height="658" alt="Image" src="https://github.com/user-attachments/assets/373e756f-52f8-45e0-816f-a37811140076" />
+
 
 The system successfully:
 
