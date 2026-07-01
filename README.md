@@ -239,7 +239,7 @@ EcoGuard AI Dashboard
 
 CPCB Compliance Violation Detection
 
-📸 Figure 3
+<img width="1284" height="660" alt="Image" src="https://github.com/user-attachments/assets/077b824f-09a1-4e35-b078-138a65d088e0" />
 
 Automated Alert Dispatch Queue
 
