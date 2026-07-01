@@ -231,7 +231,7 @@ NOx	≤ 80 µg/m³
 PM2.5	≤ 60 µg/m³
 CO₂	≤ 1000 ppm
 📸 Screenshots
-📸 Figure 1
+<img width="1297" height="647" alt="Image" src="https://github.com/user-attachments/assets/1104ed59-c8ab-45a0-8771-a001270f4d4a" />
 
 EcoGuard AI Dashboard
 
